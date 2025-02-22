@@ -1,16 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int sortshit(const void *onevoid, const void *twovoid)
-{
-	const int *one = onevoid, *two = twovoid;
-	if (*one > *two)
-		return 1;
-	if (*one < *two)
-		return -1;
-	return 0;
-}
-
 int main(void)
 {
 	FILE *input = fopen("input.txt", "r");
